@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>播放器</title>
+</head>
+<body background="./img/bg0.png">
+  <!-- 上半部分 -->
+    <div class="shang">
+      <!-- 上半部分 -->
+      <div class="cp">
+        <!-- 唱片 -->
+        <div class="cp-bg">
+          <div class="cp-img rotate-play"></div>
+        </div>
+      </div>
+      <!-- 歌曲信息 -->
+      <div class="gq">
+        <div class="yymc">音乐名称</div>
+        <div class="zzmc">作者：
+          <span class="xm">姓名</span>
+      </div>
+    </div>
+    </div>
+    <!-- 下半部分 -->
+    <div class="xia">
+      <audio id="audioTag"></audio>
+      <!-- 进度条 -->
+      <div class="jindutiao ">
+        <div class="progress-played"></div>
+      </div>
+      
+      <!-- 控制按钮 -->
+      <div class="kzan">
+        <div class="time">
+          <span class="played-time">00:00</span>
+          &nbsp;/&nbsp;
+          <span class="audio-time">00:00</span>
+        </div>
+        <div class="center-button">
+          <!-- 播放模式 -->
+          <div class="play center-icon"></div>
+          <!-- 上一首 -->
+          <div class="before center-icon"></div>
+          <!-- 暂停 -->
+          <div class="playpause center-icon icon-play"></div>
+          <!-- 下一首 -->
+          <div class="next center-icon"></div>
+          <!-- 音量调节 -->
+          <div class="volumn center-icon"></div>
+          <!-- 音量滑动 -->
+          <input type="range" value="80" min="0" max="100" step="1" id="volumn-togger">
+        </div>
+        <div class="right-button">
+          <!-- mv -->
+          <div class="mv right-icon"></div>
+          <!-- 倍速 -->
+          <div class="speed">1.0x</div>
+          <!-- 列表 -->
+          <div class="list right-icon"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 左边透明遮罩层 -->
+     <div class="close-list"></div>
+     <div class="musicList-container">
+      <div class="music-list-title">播放队列</div>
+      <hr>
+      <div class="musics-list">
+      </div>
+     </div>
+</body>
+</html>
+  <script src="./js/index.js"></script>
